@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Do you think you have the NBA knowledge to score a perfect on this quiz?! Let's find out to see if you truly are a basketball fanatic.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz App: Are you a basketball fanatic?/title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+<!-- Score and question count -->
+	<div class='container'>
+		<div class='row meta-info'>
+			<div class='col-sm-6'>
+				<p class='js-question-counter'>Question <span class='js-question-count'>0</span> / 10</p>
+			</div>
+			<div class='col-sm-6'>
+				<p class='js-score-counter'>Score <span class='js-score-count'>0</span> / 10</p>
+			</div>
+		</div>
+	<!-- Starting page  -->
+		<div class='row well'>
+			<div class='col-sm-12'>
+				<header>
+					<h1>Are you a basketball fanatic?</h1>
+					<p>Click on Start to test your basketball knowledge.</p>
+					<button type='button' class='btn btn-start'>Start</button>
+				</header>
+			</div>
+		</div>
+
+		<!-- Question page -->
+		<div class='row well'>
+			<main>
+				<fieldset class='form-group'>
+					<div class='form-check'>
+						<label class='form-check-label'>
+							<!-- Not quite sure how I would link the form/question to BootStrap -->
+							<input type='radio' class='form-check-input js-question' name='questionChoice' value=''>
+						</label>
+					</div>
+				</fieldset>
+				<button type='submit' name='submit' class='btn btn-primary'>Submit</button>
+				<button type='button' name='next' class='btn btn-success'>Next</button>
+			</main>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
