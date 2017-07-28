@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Do you think you have the NBA knowledge to score a perfect on this quiz?! Let's find out to see if you truly are a basketball fanatic.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Quiz App: Are you a basketball fanatic?/title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Quiz App: Are you a basketball fanatic?</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
 </head>
 
 <body>
 <!-- Score and question count -->
+
 	<div class='container'>
-		<div class='row meta-info'>
+		<div class='row meta-info hide-header'>
 			<div class='col-sm-6'>
 				<p class='js-question-counter'>Question <span class='js-question-count'>0</span> / 10</p>
 			</div>
@@ -21,29 +24,57 @@
 			</div>
 		</div>
 	<!-- Starting page  -->
-		<div class='row well'>
+		<div class='row well landing'>
 			<div class='col-sm-12'>
 				<header>
 					<h1>Are you a basketball fanatic?</h1>
 					<p>Click on Start to test your basketball knowledge.</p>
-					<button type='button' class='btn btn-start'>Start</button>
+					<button type='button' class='btn btn-start startQuiz'>Start</button>
 				</header>
 			</div>
 		</div>
-
-		<!-- Question page -->
+	</div>
+	<!-- Question area -->
+	<div class='container hide-header'>
+		<div class='row well questionArea'>
+			<p class= 'question js-question'></p>
+		</div>
+	</div>
+	
+	
+		<!-- Answers page -->
+	<div class='container hide-header'>
 		<div class='row well'>
 			<main>
-				<fieldset class='form-group'>
+				<fieldset class='form-group' id='quiz'>
 					<div class='form-check'>
 						<label class='form-check-label'>
-							<!-- Not quite sure how I would link the form/question to BootStrap -->
-							<input type='radio' class='form-check-input js-question' name='questionChoice' value=''>
+							<input type='radio' class='form-check-input js-choice' name='answerChoice' value='0'>
+							<div class='answer-0'></div>
+						</label>
+					</div>
+
+					<div class='form-check'>
+						<label class='form-check-label'>
+							<input type='radio' class='form-check-input js-choice' name='answerChoice' value='1'>
+							<div class='answer-1'></div>
+						</label>
+					</div>
+
+					<div class='form-check'>
+						<label class='form-check-label'>
+							<input type='radio' class='form-check-input js-choice' name='answerChoice' value='2'>
+							<div class='answer-2'></div>
+						</label>
+					</div>
+
+					<div class='form-check'>
+						<label class='form-check-label'>
+							<input type='radio' class='form-check-input js-choice' name='answerChoice' value='3'>
+							<div class='answer-3'></div>
 						</label>
 					</div>
 				</fieldset>
-				<button type='submit' name='submit' class='btn btn-primary'>Submit</button>
-				<button type='button' name='next' class='btn btn-success'>Next</button>
 			</main>
 		</div>
 	</div>
